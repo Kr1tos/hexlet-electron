@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electron User Table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>User Table</h1>
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <button id="addUserBtn">Add User</button>
+
+  <div id="userForm" class="hidden">
+    <h2>Add New User</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <button id="submitUserBtn">Submit</button>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
